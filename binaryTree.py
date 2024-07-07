@@ -20,12 +20,12 @@ class BinaryTree:
             # Left child:
             if node.left_child != None:
                 if node.right_child != None:
-                    print(string + "L" + "--" * indentation, end="")
+                    print(string + "L" + "-" * indentation, end="")
                 else:
-                    print(string + "L" + "--" * indentation, end="")
+                    print(string + "L" + "-" * indentation, end="")
                 traverseBinaryTree(node.left_child, string + "|" + " " * indentation)
             if node.right_child != None:
-                print(string + "L" + "--" * indentation, end="")
+                print(string + "L" + "-" * indentation, end="")
                 traverseBinaryTree(node.right_child, string + "|" + " " * indentation)
 
         traverseBinaryTree(self.root, "")
